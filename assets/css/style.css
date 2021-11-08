@@ -1,0 +1,262 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+button,
+input[type="submit"] {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: indigo;
+  color: #333;
+}
+
+/*============================================= 
+ FIRST SECTION
+=============================================*/
+.first-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-section button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  color: indigo;
+  box-shadow: 5px 5px 5px 1px #00000014;
+}
+
+/*=============================================
+ SECOND SECTION
+=============================================*/
+.second-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.second-section .rule-conn {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 1px #00000014;
+}
+.second-section .rule-conn .top {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Segoe UI";
+}
+.second-section .rule-conn .middle {
+  border: 1px solid #9999994d;
+  border-left: none;
+  border-right: none;
+}
+.second-section .rule-conn .middle ol {
+  line-height: 30px;
+}
+.second-section .rule-conn .middle ol li span {
+  color: indigo;
+  font-weight: bold;
+}
+.second-section .rule-conn .bottom {
+  padding: 5px;
+  text-align: right;
+}
+.second-section .rule-conn .bottom button {
+  width: 100px;
+  height: 40px;
+  color: indigo;
+  background-color: #fff;
+  border: 2px solid indigo;
+}
+.second-section .rule-conn .bottom button:first-child:hover {
+  background-color: indigo;
+  color: #fff;
+}
+.second-section .rule-conn .bottom button:last-child {
+  background-color: indigo;
+  color: #fff;
+  margin-left: 10px;
+}
+
+/*=============================================
+ THIRD SECTION
+=============================================*/
+.third-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.third-section .question-conn {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 1px #00000014;
+}
+.third-section .question-conn .top {
+  position: relative;
+  box-shadow: 0px 2px 2px 1px #8080805e;
+}
+.third-section .question-conn .top .up {
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.third-section .question-conn .top .up b {
+  font-size: 18px;
+  font-weight: 600;
+}
+.third-section .question-conn .top .up .counter-conn {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #4b008261;
+}
+.third-section .question-conn .top .up .counter-conn li {
+  list-style: none;
+  color: indigo;
+}
+.third-section .question-conn .top .up .counter-conn li:last-child {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  margin-left: 10px;
+}
+.third-section .question-conn .top .progress-bar {
+  height: 3px;
+  width: 0%;
+  bottom: 0;
+  left: 0;
+  transition: 1.5s;
+  position: absolute;
+  background-color: indigo;
+}
+.third-section .question-conn .middle {
+  border-bottom: 1px solid #b653534d;
+  padding: 15px;
+}
+.third-section .question-conn .middle .conn {
+  font-weight: 600;
+  font-size: 22px;
+}
+.third-section .question-conn .middle .option-conn {
+  padding: 10px 0;
+}
+.third-section .question-conn .middle .option-conn li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  background-color: #4b00820a;
+  border: 1px solid indigo;
+}
+.third-section .question-conn .middle .option-conn li:hover {
+  border: 1px solid #0080004d;
+  color: green;
+  background-color: #0080004d;
+}
+.third-section .question-conn .middle .option-conn li.right {
+  border: 1px solid #0080004d;
+  color: green;
+  background-color: #0080004d;
+}
+.third-section .question-conn .middle .option-conn li.wrong {
+  border: 1px solid #f003;
+  color: red;
+  background-color: #f003;
+}
+.third-section .question-conn .middle .option-conn li .wrong {
+  color: red;
+}
+.third-section .question-conn .middle .option-conn li .right {
+  color: blue;
+}
+.third-section .question-conn .bottom {
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+.third-section .question-conn .bottom .right .nxtQue {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background-color: indigo;
+  bottom: 5px;
+  right: 5px;
+  position: absolute;
+  display: none;
+}
+.third-section .question-conn .bottom .right .display-block {
+  display: block;
+}
+
+/*=============================================
+ FOURTH SECTION
+=============================================*/
+.fourth-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.fourth-section .popup-conn {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 1px #00000014;
+}
+.fourth-section .popup-conn h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 20px;
+}
+.fourth-section .popup-conn .btn-conn button {
+  height: 40px;
+  padding: 0 20px;
+  margin: 30px 10px 20px;
+  color: indigo;
+  background-color: #fff;
+  border: 1px solid indigo;
+}
+.fourth-section .popup-conn .btn-conn button:first-child {
+  background-color: indigo;
+  color: #fff;
+}
+
+/*  */
+.display-none {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}

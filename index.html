@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz web application</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--  -->
+    <section class="first-section">
+        <button>Start Quiz</button>
+    </section>
+    <!--  -->
+    <section class="second-section">
+        <div class="rule-conn">
+            <div class="top">
+                Some Rules of this Quiz
+            </div>
+            <div class="middle">
+                <ol>
+                    <li>You will have only <span>15 seconds </span>per question.</li>
+                    <li>Once you select your answer, it can't be undone.</li>
+                    <li>You can't select any option when time goes off.</li>
+                    <li>You can't exit from the quiz while you are playing.</li>
+                    <li>You'll get points on the basis of your correct answers.</li>
+                </ol>
+            </div>
+            <div class="bottom">
+                <button class="exit">Exit Quiz</button>
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="third-section">
+        <div class="question-conn">
+            <div class="top">
+                <div class="up">
+                    <b>Awesome Quiz Application</b>
+                    <div class="counter-conn">
+                        <li>Time Left</li>
+                        <li class="timeLeft">0</li>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                </div>
+            </div>
+            <div class="middle">
+                <div class="conn">
+                    <!-- question display here -->
+                </div>
+                <div class="option-conn">
+                    <!-- option display here -->
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <b class="numOutOf">0</b> of <b class="numOfQue">0</b> questions
+                </div>
+                <div class="right">
+                    <button class="nxtQue">Next Que</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="fourth-section">
+        <div class="popup-conn">
+            <h2>YAY!</h2>
+            <span>You've completed the Quiz</span>
+            <br>
+            <span>you got <b class="score">0</b> of <b class="numOfQue">0</b></span>
+            <div class="btn-conn">
+                <button class="replay">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/js/question.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
